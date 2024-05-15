@@ -13,7 +13,27 @@
 </head>
 <body>
     <header class="home-header">
-        
+      <div class="navbar-container">
+
+        <ul class="navbar">
+            <div class="logo">
+                <img class="logo-img" src="">
+            </div>
+            <div id="menu-bar">
+
+                <li class="navbar-item" id="menu-bar">
+                    <a style="cursor: pointer; color: white;" onclick="openNav()" class="navbar-a-item">Menu <i class="fas fa-bars"></i></a>
+                </li>
+
+                <div class="menu-icon" onclick="this.classList.toggle('hover');Drop(0)">
+                    <div class="menu-bar menu-bar1"></div>
+                    <div class="menu-bar menu-bar2"></div>
+                    <div class="menu-bar menu-bar3"></div>
+                  </div>
+            </div>
+
+        </ul>
+    </div>
     </header>
     <header-component></header-component>
 </body>
