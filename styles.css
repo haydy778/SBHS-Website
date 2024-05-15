@@ -1,5 +1,5 @@
 html {
-    background-color: #fff ;
+    background-color: #fff;
     height: 100%;
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -9,4 +9,63 @@ html {
     margin: 0px;
     padding: 0px 0px;
     box-sizing: border-box;
+}
+
+.carousel-item {
+    height: 80vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
+
+.display-4 {
+    font-family: 'MyfirstFont', serif;
+    color: white;
+    font-size: 70px;
+    text-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+
+}
+
+.lead {
+    font-family: 'MyfirstFont', serif;
+    color: white;
+    font-size: 30px;
+    text-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+    .display-4 {
+        font-size: 45px !important;
+    }
+
+    .lead {
+        font-size: 25px !important;
+    }
+
+    .d-none {
+        bottom: 33% !important;
+    }
+
+    .port {
+        bottom: 40% !important;
+    }
+
+    .text {
+        font-size: 45px;
+    }
+}
+
+.carousel-control-next-icon:hover {
+    background-color: transparent;
+
+}
+
+.carousel-control-prev-icon:hover {
+    background-color: transparent;
+
 }

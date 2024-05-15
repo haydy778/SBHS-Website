@@ -11,30 +11,54 @@
   <script src="https://kit.fontawesome.com/7703c8ece0.js" crossorigin="anonymous"></script>
   <meta content="width=device-width, initial-scale=1" name="viewport" />
 </head>
+
 <body>
-    <header class="home-header">
-      <div class="navbar-container">
+  <header>
+    <div id="indicators" class="carousel slide" data-ride="carousel">
 
-        <ul class="navbar">
-            <div class="logo">
-                <img class="logo-img" src="">
-            </div>
-            <div id="menu-bar">
-
-                <li class="navbar-item" id="menu-bar">
-                    <a style="cursor: pointer; color: white;" onclick="openNav()" class="navbar-a-item">Menu <i class="fas fa-bars"></i></a>
-                </li>
-
-                <div class="menu-icon" onclick="this.classList.toggle('hover');Drop(0)">
-                    <div class="menu-bar menu-bar1"></div>
-                    <div class="menu-bar menu-bar2"></div>
-                    <div class="menu-bar menu-bar3"></div>
-                  </div>
+        <ol class="carousel-indicators">
+            <li data-target="#indicators" data-slide-to="0" class="active"></li>
+            <li data-target="#indicators" data-slide-to="1"></li>
+            <li data-target="#indicators" data-slide-to="2"></li>
+        </ol>
+        <div style="background-color: black;" class="carousel-inner" role="listbox">
+            <div class="carousel-item active" style="background-image: url('21.9.22-52.jpg');">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="display-4"><span class="auto-type"></span></h3>
+                    <p class="lead">Welcome To Millar Photography</p>
+                </div>
             </div>
 
-        </ul>
+
+            <div class="carousel-item" style="background-image: url('Image\ 81.png'); ">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="display-4"><span class="auto-type2"></span></h3>
+                    <p class="lead">Welcome To Millar Photography</p>
+                </div>
+            </div>
+
+
+
+            <div class="carousel-item" style="background-image: url('21.9.22-51.jpg');">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="display-4"><span class="auto-type3"></span></h3>
+                    <p class="lead">Welcome To Millar Photography</p>
+                </div>
+            </div>
+        </div> 
+        <a class="carousel-control-prev" href="#indicators" role="button" data-slide="prev"> 
+            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>  -->
+            <span class="ind left">&#10229;</span>            
+            <span class="sr-only">Previous</span> 
+        </a> 
+
+        <a class="carousel-control-next" href="#indicators" role="button" data-slide="next"> 
+            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>  -->
+            <span class="ind right">&#10230;</span>
+            <span class="sr-only">Next</span> 
+        </a>
     </div>
-    </header>
+</header>
     <header-component></header-component>
 </body>
 <script src="JS/main.js"></script>
