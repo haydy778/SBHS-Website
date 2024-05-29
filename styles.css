@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'TitleFont';
+    src: url(Fonts/old_london/OldLondon.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 html {
     background-color: #fff;
     height: 100%;
@@ -22,19 +28,30 @@ html {
     opacity: 0.5;
 }
 
+.d-none{
+    left: 30px;
+    background-color: rgba(0, 0, 0, 0.356);
+    max-width: 800px;
+    text-align: left;
+    padding: 30px 50px;
+    align-items: flex-start;
+    display: flex;
+}
 
 .display-4 {
-    font-family: 'MyfirstFont', serif;
     color: white;
-    font-size: 70px;
+    font-size: 25px;
     text-shadow: 0 1px 3px rgb(0 0 0 / 20%);
-
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 3px;
 }
 
 .lead {
-    font-family: 'MyfirstFont', serif;
+    font-family: 'TitleFont', serif;
+    letter-spacing: 3px;
+    line-height: 100%;
     color: white;
-    font-size: 30px;
+    font-size: 50px;
     text-shadow: 0 1px 3px rgb(0 0 0 / 20%);
 
 }
@@ -49,7 +66,7 @@ html {
     }
 
     .d-none {
-        bottom: 33% !important;
+        bottom: 53% !important;
     }
 
     .port {
