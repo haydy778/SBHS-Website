@@ -26,7 +26,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 .carousel-caption {
@@ -75,6 +75,13 @@ html {
     .text {
         font-size: 45px;
     }
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    font-size: 50px !important;
+    color: white;
+    opacity: 1;
 }
 
 .carousel-control-next-icon:hover {
@@ -148,7 +155,7 @@ html {
     text-shadow: 0 1px 3px rgb(0 0 0 / 30%);
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
-    font-size: 14px;
+    font-size: 16px;
     transition: color 0.3s ease-in-out;
     white-space: nowrap;
 }
