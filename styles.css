@@ -16,7 +16,7 @@ html {
 }
 
 .carousel-item {
-    height: 80vh;
+    height: 100vh;
     min-height: 350px;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
@@ -96,20 +96,17 @@ html {
 .sbhs-logo {
     position: absolute;
     z-index: 100;
+    margin: 25px;
     margin-left: 40px;
-    width: 90px;
+    margin-top: 15px;
 }
 
 .navbar-container {
-    position: relative;
+    position: absolute;
     top: 0;
     right: 0;
     left: 0;
     z-index: 100;
-}
-
-ul{
-    margin-bottom: 0px;
 }
 
 .navbar {
@@ -118,10 +115,9 @@ ul{
     justify-content: flex-end;
     padding: 20px;
     align-items: center;
-    min-height: 50px;
+    min-height: 150px;
     padding-right: 3em;
     align-items: center;
-    background-color: #fff;
 }
 
 .navbar.three {
@@ -145,7 +141,7 @@ ul{
 
 .navbar-a-item:hover {
     text-decoration: none;
-    color: #003b73;
+    color: #fff;
 }
 
 .navbar-container-sub a:hover {
@@ -153,12 +149,12 @@ ul{
 }
 
 .navbar-a-item {
-    color: black;
+    color: #fff;
     text-transform: uppercase;
     text-shadow: 0 1px 3px rgb(0 0 0 / 30%);
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
-    font-size: 14px;
+    font-size: 16px;
     transition: color 0.3s ease-in-out;
     white-space: nowrap;
 }
@@ -175,11 +171,11 @@ ul{
 
 
 .dropdown-menu-header {
-    padding: 15px;
-    padding-top: 0px;
+    padding: 0px;
+    padding-top: 0em;
     position: absolute;
-    margin-left: -85px;
-    margin-top: 0px;
+    margin-left: -55px;
+    margin-top: 10px;
     transition: all 0.3s;
     visibility: hidden;
     opacity: 0;
@@ -187,24 +183,22 @@ ul{
 }
 
 .header-menu__dropdown-nav {
-    background-color: #fff;
+    background-color: #333;
 
 }
 
 .dropdown-item {
     list-style-type: none;
+    padding: 15px;
     background-color: transparent !important;
-    color: black;
-    font-family: 'montserrat';
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 12px;
-    padding: 10px 0px;
+    color: white;
+    font-family: myFont;
+    font-size: 0.8em;
 }
 
 .dropdown-item:hover {
     background-color: transparent;
-    color: black;
+    color: white;
 }
 
 li {
@@ -215,6 +209,7 @@ li {
 .header-menu__dropdown-nav {
     text-align: center;
     width: 200px;
+    margin-top: 11.5px;
     padding: 10px;
     list-style-type: none;
 }
