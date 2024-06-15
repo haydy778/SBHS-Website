@@ -16,14 +16,14 @@ html {
   box-sizing: border-box;
 }
 
-body{
-    background-color: #fdfdfd;
+body {
+  background-color: #fdfdfd;
 }
 
 /* Header Slideshow */
 
 .carousel-item {
-  margin-top: 60px;  
+  margin-top: 60px;
   height: 92vh;
   min-height: 350px;
   background: no-repeat center scroll;
@@ -122,6 +122,7 @@ body{
   right: 0;
   left: 0;
   z-index: 100;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 ul {
@@ -383,6 +384,7 @@ li {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-evenly;
+  /* flex-wrap: wrap; */
   padding: 50px;
 }
 
@@ -410,8 +412,8 @@ li {
   transition: all 0.5s;
 }
 
-.explore:hover{
-    transform: scale(1.05);
+.explore:hover {
+  transform: scale(1.05);
 }
 
 .image img {
@@ -459,111 +461,215 @@ li {
 
 /* Whats on/News Section */
 
-.whatson-news-section{
-    display: flex;
-    flex-direction: row;
-    align-content: flex-start;
-    margin-top: 4em;
-    background-color: #fdfdfd;
+.whatson-news-section {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  margin-top: 4em;
+  background-color: #fdfdfd;
 }
 
-.whatson-section{
-    width: 50vw;
-    border-right: 0.1px solid black;
-    justify-content: center;
+.whatson-section {
+  width: 50vw;
+  border-right: 0.1px solid black;
+  justify-content: center;
 }
 
-.news-section{
-    width: 50vw;
-    border-left: 0.1px solid black;
+.news-section {
+  width: 50vw;
+  border-left: 0.1px solid black;
 }
 
-.whatson-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.whatson-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.whatson{
-    display: flex;
-    flex-direction: row;
-    margin: 30px;
-    align-items: center;
+.whatson {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+  align-items: center;
+  cursor: pointer;
 }
 
-.whatson a{
-    text-align: center;
-    padding: 20px;
-    width: 100px;
-    height: 100px;
-    background-color: #1b3680;
-    color: #fdfdfd;
-    font-family: 'Cinzel';
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.whatson .date-box {
+  text-align: center;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: #1b3680;
+  color: #fdfdfd;
+  font-family: "Cinzel";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
-.whatson p{
-    text-align: center;
-    color: black;
-    font-family: 'montserrat';
-    margin-left: 30px;
-    margin-bottom: 0px;
+.date-box:hover {
+  background-color: #b72113;
+}
+
+.whatson p {
+  text-align: left;
+  color: black;
+  font-family: "montserrat";
+  margin-left: 30px;
+  margin-bottom: 0px;
+  letter-spacing: 1px;
+  max-width: 300px;
+}
+
+hr {
+  width: 50px;
+  margin-right: 50px;
+  background-color: #000000;
+}
+
+.news-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+}
+
+.news-whole-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.news-container {
+  display: row;
+  flex-direction: column;
+  text-align: center;
+  margin: 0px 30px;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.news-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 125px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.news-image-container img {
+  width: 200px;
+}
+
+.news-image-container:hover {
+  transform: scale(1.1);
+}
+
+.news-text-container h1 {
+  text-align: left;
+  font-family: "montserrat";
+  letter-spacing: 1px;
+  font-size: 0.7em;
+  text-transform: capitalize;
+  max-width: 200px;
+}
+
+/* Footer */
+
+footer {
+  width: 100vw;
+  min-height: 550px;
+  background-color: #b72113;
+  margin-top: 100px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.column-1 {
+  align-items: flex-start;
+}
+
+.footer-column {
+  color: #fff;
+  margin: 50px;
+  margin-top: 0px;
+}
+
+.footer-column h1 {
+  margin-top: 10px;
+  font-family: "Cinzel";
+  font-size: 1.5em;
+}
+
+.column-1 p {
+  font-family: "montserrat";
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+footer img {
+  margin: 20px 50px 0px 50px;
+}
+
+footer hr {
+  width: 100vw;
+  background-color: #fff;
+  justify-self: center;
+  margin: 20px 0px 0px 0px;
+}
+
+.socials {
+  margin-bottom: 20px;
+}
+
+.socials i {
+  margin-right: 5px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.footer-column a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.8em;
+  margin: 5px 0px 5px 0px;
+  font-family: "montserrat";
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.footer-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-title h1 {
+    padding-top: 25px;
+    font-family: "Cinzel";
+    font-size: 3em;
+    color: #fff;
     letter-spacing: 1px;
-    max-width: 300px;
-}
-
-hr{
-    width: 50px;
-    margin-right: 50px;
-    background-color: #000000;
-}
-
-.news-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: left;
-}
-
-.news-whole-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.news-container{
-    display: row;
-    flex-direction: column;
-    text-align: center;
-    margin: 0px 30px;
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.news-image-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    width: 200px;
-    height: 125px;
-    overflow: hidden;
-}
-
-.news-image-container img{
-    width: 200px;
-}
-
-.news-text-container h1{
-    font-family: 'Cinzel';
-    font-size: 0.8em;
-    text-transform: uppercase;
-    max-width: 200px;
+    margin-bottom: 0px;
 }
