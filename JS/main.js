@@ -39,9 +39,17 @@ class Header extends HTMLElement { // Have my header html in one place so if i n
                       </ul>
                   </div>
               </li>
-  
+              
               <li class="navbar-item">
-                  <a class="navbar-a-item" href="#">Coming Soon</a>
+              <a class="navbar-a-item" href="#">Unfinished</a>
+              </li>
+
+              <li class="navbar-item">
+              <a class="navbar-a-item" href="#">Unfinished</a>
+              </li>
+
+              <li class="navbar-item">
+                  <a class="navbar-a-item" href="#">Unfinished</a>
               </li>
               <li class="navbar-item">
                   <a class="navbar-a-item" onclick="bottom()" href="#">Contact</a>
@@ -98,7 +106,7 @@ class Header extends HTMLElement { // Have my header html in one place so if i n
               </div>
   
               <li class="navbar-item">
-                  <a class="navbar-small-a-item" href="#">Coming Soon</a>
+                  <a class="navbar-small-a-item" href="#">Unfinished</a>
               </li>
           </div>
   

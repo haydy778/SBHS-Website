@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 
+/* Default Styles */
 
 html {
     background-color: #fff;
@@ -15,6 +16,8 @@ html {
     box-sizing: border-box;
 }
 
+/* Header Slideshow */
+
 .carousel-item {
     height: 92vh;
     min-height: 350px;
@@ -23,7 +26,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    opacity: 0.4;
+    opacity: 0.7;
 }
 
 .carousel-caption {
@@ -32,7 +35,7 @@ html {
 
 .d-none {
     left: -50px;
-    background-color: rgba(0, 0, 0, 0.356);
+    background-color: #000b2988;
     max-width: 800px;
     text-align: left;
     padding: 50px 50px;
@@ -60,7 +63,6 @@ html {
     color: white;
     font-size: 45px;
     text-shadow: 0 1px 3px rgb(0 0 0 / 20%);
-    margin-top: 40px;
 }
 
 @media (min-width: 0px) and (max-width: 600px) {
@@ -93,6 +95,8 @@ html {
     background-color: transparent;
 
 }
+
+/* Navbar */
 
 .sbhs-logo {
     position: absolute;
@@ -145,7 +149,7 @@ ul{
 
 .navbar-a-item:hover {
     text-decoration: none;
-    color: #003b73;
+    color: #0061bb;
 }
 
 .navbar-container-sub a:hover {
@@ -155,12 +159,13 @@ ul{
 .navbar-a-item {
     color: black;
     text-transform: uppercase;
-    text-shadow: 0 1px 3px rgb(0 0 0 / 30%);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.084);
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
     font-size: 14px;
     transition: color 0.3s ease-in-out;
     white-space: nowrap;
+    font-weight: 500;
 }
 
 .carousel-caption {
@@ -175,10 +180,9 @@ ul{
 
 
 .dropdown-menu-header {
-    padding: 15px;
     padding-top: 0px;
     position: absolute;
-    margin-left: -85px;
+    margin-left: -68px;
     margin-top: 0px;
     transition: all 0.3s;
     visibility: hidden;
@@ -204,13 +208,16 @@ ul{
 
 .dropdown-item:hover {
     background-color: transparent;
-    color: black;
+    color: #0061bb;
+}
+
+.dropdown-menu-header:hover .dropdown-menu-name a{
+    color: #0061bb;
 }
 
 li {
     list-style-type: none;
 }
-
 
 .header-menu__dropdown-nav {
     text-align: center;
@@ -265,3 +272,97 @@ li {
     font-weight: 200;
     text-shadow: 0 1px 3px rgb(0 0 0 / 15%);
   }
+
+/* Section Title */
+
+.section-title{
+    padding: 50px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.section-title h1{
+    color: #024B8F;
+    font-family: "Cinzel", serif;
+    letter-spacing: 3px;
+    font-size: 2.5em;
+    white-space: nowrap;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.section-title p{
+    margin-bottom: 0px;
+    color: black;
+    font-family: "montserrat", serif;
+    letter-spacing: 3px;
+    font-size: 1.1em;
+    white-space: nowrap;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+/* Rector address */
+
+.rector-container{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.rector-container img{
+    height: 60vw;
+}
+
+.rector-text-container{
+    background-color: #b72113;
+    max-width: 50vw;
+    min-height: 500px;
+    position: relative;
+    margin-left: -100px;
+    padding: 50px;
+    padding-bottom: 30px;
+}
+
+.rector-text-container h1{
+    color: white;
+    font-family: "Cinzel", serif;
+    letter-spacing: 3px;
+    font-size: 2em;
+    white-space: nowrap;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.rector-text-container p{
+    color: white;
+    font-family: "montserrat", serif;
+    font-size: 0.9em;
+    user-select: none;
+}
+
+.button-container{
+    display: block;
+    margin-top: 30px;
+}
+
+.button-container a{
+    background-color: #1B3680;
+    border: solid 1.5px #1B3680;
+    color: white !important;
+    font-family: "montserrat", serif;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 1em;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration-line: none;
+    transition: all 0.5s;
+}
+
+.button-container a:hover{
+    background-color: transparent !important;
+    color: #0030b3 !important;
+}
+
