@@ -8,10 +8,11 @@ class Header extends HTMLElement { // Have my header html in one place so if i n
     connectedCallback() {
       this.innerHTML = `
       <header>
-      <img class="sbhs-logo" src="SBHS-Logo.png">
   </header>
   <header class="header-1">
       <div class="navbar-container">
+      <img class="sbhs-logo" src="SBHS-Logo.png">
+
           <ul class="navbar">
               <li class="navbar-item">
                   <a class="navbar-a-item" href="index.html">Home</a>
