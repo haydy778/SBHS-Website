@@ -228,3 +228,38 @@ li {
     left: 0;
     bottom: 0;
 }
+
+@keyframes text {
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+  
+  /* Rolling Track CSS */
+  
+  .track-container {
+    padding: 1em;
+    background-color: #606060;
+    color: white;
+    width: 100%;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    overflow: hidden;
+  }
+  
+  .track {
+    position: relative;
+    display: flex;
+    animation: text 50s linear infinite !important;
+    font-family: "Cinzel", serif;
+    letter-spacing: 3px;
+    font-size: 1.1em;
+    white-space: nowrap;
+    text-transform: uppercase;
+    user-select: none;
+    cursor: auto;
+    font-weight: 200;
+    text-shadow: 0 1px 3px rgb(0 0 0 / 15%);
+  }
