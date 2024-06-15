@@ -11,7 +11,7 @@ class Header extends HTMLElement { // Have my header html in one place so if i n
   </header>
   <header class="header-1">
       <div class="navbar-container">
-      <img class="sbhs-logo" src="SBHS-Logo.png">
+      <img class="sbhs-logo" src="SBHS-Logo 3.png">
 
           <ul class="navbar">
               <li class="navbar-item">

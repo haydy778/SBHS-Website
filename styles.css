@@ -16,18 +16,7 @@ html {
 }
 
 .carousel-item {
-    height: 90vh;
-    min-height: 350px;
-    background: no-repeat top scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    opacity: 0.4;
-}
-
-.carousel-item.portrait-{
-    height: 90vh;
+    height: 92vh;
     min-height: 350px;
     background: no-repeat center scroll;
     -webkit-background-size: cover;
@@ -108,8 +97,8 @@ html {
 .sbhs-logo {
     position: absolute;
     z-index: 100;
-    margin-left: 40px;
-    width: 90px;
+    margin-left: 0px;
+    width: 400px;
 }
 
 .navbar-container {
@@ -128,9 +117,8 @@ ul{
     position: relative;
     display: flex;
     justify-content: flex-end;
-    padding: 20px;
     align-items: center;
-    min-height: 50px;
+    min-height: 20px;
     padding-right: 3em;
     align-items: center;
     background-color: #fff;
