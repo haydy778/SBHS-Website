@@ -7,7 +7,7 @@ class Header extends HTMLElement { // Have my header html in one place so if i n
     // When the custom element is connected to the DOM, execute this function
     connectedCallback() {
       this.innerHTML = `
-      <header></header>
+      
       `;
     }
   }
