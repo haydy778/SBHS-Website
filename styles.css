@@ -16,9 +16,20 @@ html {
 }
 
 .carousel-item {
-    height: 80vh;
+    height: 90vh;
     min-height: 350px;
-    background: no-repeat center center scroll;
+    background: no-repeat top scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.4;
+}
+
+.carousel-item.portrait-{
+    height: 90vh;
+    min-height: 350px;
+    background: no-repeat center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -31,14 +42,15 @@ html {
 }
 
 .d-none {
-    left: 50px;
+    left: -50px;
     background-color: rgba(0, 0, 0, 0.356);
-    max-width: 750px;
+    max-width: 800px;
     text-align: left;
-    padding: 30px 30px;
+    padding: 50px 50px;
     align-items: flex-start;
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: -10px;
+    scale: 0.75;
 }
 
 .display-4 {
@@ -59,7 +71,7 @@ html {
     color: white;
     font-size: 45px;
     text-shadow: 0 1px 3px rgb(0 0 0 / 20%);
-
+    margin-top: 40px;
 }
 
 @media (min-width: 0px) and (max-width: 600px) {

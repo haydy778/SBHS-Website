@@ -118,10 +118,10 @@ class Header extends HTMLElement { // Have my header html in one place so if i n
               <h3 class="lead">Welcome To Southland Boys' High School<span class="auto-type"></span></h3>
               <p class="display-4">A traditional school with a contemporary heart</p>
           </div>
-          <div class="carousel-item active" style="background-image: url('Images/Front - 2.jpeg'); "></div>
+          <div class="carousel-item portrait- active" style="background-image: url('Images/Front - 2.jpeg'); "></div>
           <div class="carousel-item" style="background-image: url('Images/Image 1.jpg'); "></div>
           <div class="carousel-item" style="background-image: url('Images/Image 2.jpg'); "></div>
-          <div class="carousel-item" style="background-image: url('Images/Front - 4.jpeg'); "></div>
+          <div class="carousel-item portrait-" style="background-image: url('Images/Front - 4.jpeg'); "></div>
           <div class="carousel-item" style="background-image: url('Images/Image 3.jpg'); "></div>
       </div> 
       <a class="carousel-control-prev" href="#indicators" role="button" data-slide="prev"> 
