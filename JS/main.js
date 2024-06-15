@@ -11,7 +11,9 @@ class Header extends HTMLElement { // Have my header html in one place so if i n
   </header>
   <header class="header-1">
       <div class="navbar-container">
+      <div class="sbhs-logo-container">
       <img class="sbhs-logo" src="SBHS-Logo 3.png">
+      </div>
 
           <ul class="navbar">
               <li class="navbar-item">
@@ -39,7 +41,7 @@ class Header extends HTMLElement { // Have my header html in one place so if i n
                       </ul>
                   </div>
               </li>
-              
+
               <li class="navbar-item">
               <a class="navbar-a-item" href="#">Unfinished</a>
               </li>
