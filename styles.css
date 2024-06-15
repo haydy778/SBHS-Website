@@ -19,6 +19,7 @@ html {
 /* Header Slideshow */
 
 .carousel-item {
+  margin-top: 60px;  
   height: 92vh;
   min-height: 350px;
   background: no-repeat center scroll;
@@ -26,7 +27,8 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  opacity: 0.7;
+  opacity: 0.9;
+  background-color: white !important;
 }
 
 .carousel-caption {
@@ -97,9 +99,9 @@ html {
 
 /* Navbar */
 
-.sbhs-logo-container{
-    position: relative;
-    height: 0px;
+.sbhs-logo-container {
+  position: relative;
+  height: 0px;
 }
 
 .sbhs-logo {
@@ -111,7 +113,7 @@ html {
 }
 
 .navbar-container {
-  position: relative;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -366,24 +368,24 @@ li {
   color: #0030b3 !important;
 }
 
-/* Explore */
+/* Explore Section */
 
-.explore-section{
-    background-color: rgba(128, 128, 128, 0.107);
+.explore-section {
+  background-color: rgba(128, 128, 128, 0.107);
 }
 
-.explore-whole-container{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    padding: 50px;
+.explore-whole-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 50px;
 }
 
-.explore-container{
-    width: 375px;
-    margin: 20px;
-    text-align: center;
+.explore-container {
+  width: 375px;
+  margin: 20px;
+  text-align: center;
 }
 
 .explore {
@@ -408,40 +410,57 @@ li {
   width: 375px;
 }
 
-.explore-text-container h1{
-    font-family: 'Cinzel', serif;
-    font-size: 1.3em;
-    text-transform: uppercase;
+.explore-text-container h1 {
+  font-family: "Cinzel", serif;
+  font-size: 1.3em;
+  text-transform: uppercase;
 }
 
-.explore-text-container p{
-    font-family: 'montserrat';
-    font-size: 0.8em;
-    letter-spacing: 1px;
+.explore-text-container p {
+  font-family: "montserrat";
+  font-size: 0.8em;
+  letter-spacing: 1px;
 }
-
 
 .button-container-two {
-    display: block;
-    margin-top: 30px;
-  }
-  
-  .button-container-two a {
-    background-color: none;
-    border: solid 1.5px #1b3680;
-    color: #1b3680 !important;
-    font-family: "montserrat", serif;
-    text-transform: capitalize;
-    letter-spacing: 2px;
-    font-size: 0.8em;
-    padding: 15px 25px;
-    border-radius: 5px;
-    text-decoration-line: none;
-    transition: all 0.5s;
-    font-weight: 600;
-  }
-  
-  .button-container-two a:hover {
-    background-color: #1b3680 !important;
-    color: #f5f5f5 !important;
-  }
+  display: block;
+  margin-top: 30px;
+}
+
+.button-container-two a {
+  background-color: none;
+  border: solid 1.5px #1b3680;
+  color: #1b3680 !important;
+  font-family: "montserrat", serif;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-size: 0.8em;
+  padding: 15px 25px;
+  border-radius: 5px;
+  text-decoration-line: none;
+  transition: all 0.5s;
+  font-weight: 600;
+}
+
+.button-container-two a:hover {
+  background-color: #1b3680 !important;
+  color: #f5f5f5 !important;
+}
+
+/* Whats on/News Section */
+
+.whatson-news-section{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+}
+
+.whatson-section{
+    width: 50vw;
+    border-right: 0.1px solid black;
+}
+
+.news-section{
+    width: 50vw;
+    border-left: 0.1px solid black;
+}
