@@ -31,7 +31,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  opacity: 0.9;
+  opacity: 0.95;
   background-color: white !important;
 }
 
@@ -173,7 +173,7 @@ ul {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 2px;
   font-size: 14px;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.1s ease-in-out;
   white-space: nowrap;
   font-weight: 500;
 }
@@ -630,6 +630,7 @@ footer {
 
 footer img {
   margin: 20px 50px 0px 50px;
+  padding-top: 25px;
 }
 
 footer hr {
