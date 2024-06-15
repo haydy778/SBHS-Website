@@ -123,7 +123,7 @@ class Header extends HTMLElement { // Have my header html in one place so if i n
           <li data-target="#indicators" data-slide-to="1"></li>
           <li data-target="#indicators" data-slide-to="2"></li>
       </ol>
-      <div style="background-color: #f5f5f5;" class="carousel-inner" role="listbox">
+      <div style="background-color: #fdfdfd;" class="carousel-inner" role="listbox">
           <div class="carousel-caption d-none d-md-block">
               <h3 class="lead">Welcome To Southland Boys' High School<span class="auto-type"></span></h3>
               <p class="display-4">A traditional school with a contemporary heart</p>
