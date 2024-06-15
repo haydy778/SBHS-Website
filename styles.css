@@ -4,7 +4,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 html {
     background-color: #fff;
     height: 100%;
@@ -46,19 +46,21 @@ html {
 
 .display-4 {
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     text-shadow: 0 1px 3px rgb(0 0 0 / 20%);
     font-family: "Montserrat", sans-serif;
-    font-weight: 100;
+    font-weight: 400;
     letter-spacing: 3px;
 }
 
 .lead {
-    font-family: 'TitleFont', serif;
+    font-family: "Cinzel", serif;
+    text-transform: uppercase;
+    font-weight: 400;
     letter-spacing: 3px;
     line-height: 100%;
     color: white;
-    font-size: 50px;
+    font-size: 45px;
     text-shadow: 0 1px 3px rgb(0 0 0 / 20%);
 
 }
