@@ -603,7 +603,7 @@ footer {
 .footer-column {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .column-1 {
@@ -611,7 +611,7 @@ footer {
 }
 
 .footer-column {
-  color: #fff;
+  color: #ffffff;
   margin: 50px;
   margin-top: 0px;
 }
@@ -651,7 +651,7 @@ footer hr {
 }
 
 .footer-column a {
-  color: white;
+  color: rgba(255, 255, 255, 0.71);
   text-decoration: none;
   font-size: 0.8em;
   margin: 5px 0px 5px 0px;
