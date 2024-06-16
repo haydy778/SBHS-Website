@@ -883,3 +883,15 @@ footer hr {
   vertical-align: middle;
   width: 100%;
 }
+
+.choir-video{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background-color: #b72113;
+  padding: 50px;
+}
+
+.momentum-choir{
+  background-color: #1b3680;
+}
