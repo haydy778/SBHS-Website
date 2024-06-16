@@ -43,7 +43,7 @@ class Header extends HTMLElement { // Have my header html in one place so if i n
               </li>
 
               <li class="navbar-item">
-              <a class="navbar-a-item" href="#">Unfinished</a>
+              <a class="navbar-a-item" href="#">Chess</a>
               </li>
 
               <li class="navbar-item">
