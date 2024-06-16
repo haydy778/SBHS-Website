@@ -23,7 +23,7 @@ class Header extends HTMLElement { // Have my header html in one place so if i n
                   <a class="navbar-a-item" href="debating.html">Debating</a>
               </li>
               <li class="navbar-item dropdown-menu-name ">
-                  <a class="navbar-a-item dropdown-menu-name-a" href="javascript:void(0)">
+                  <a class="navbar-a-item dropdown-menu-name-a" href="choir.html">
                       Choir
                   </a>
                   <div class="dropdown-menu-header">
@@ -115,40 +115,7 @@ class Header extends HTMLElement { // Have my header html in one place so if i n
       </div>
   
   </header>
-<header>
-  <div id="indicators" class="carousel slide" data-ride="carousel">
-
-      <ol class="carousel-indicators">
-          <li data-target="#indicators" data-slide-to="0" class="active"></li>
-          <li data-target="#indicators" data-slide-to="1"></li>
-          <li data-target="#indicators" data-slide-to="2"></li>
-      </ol>
-      <div style="background-color: #fdfdfd;" class="carousel-inner" role="listbox">
-          <div class="carousel-caption d-none d-md-block">
-              <h3 class="lead">Welcome To Southland Boys' High School<span class="auto-type"></span></h3>
-              <p class="display-4">A traditional school with a contemporary heart</p>
-          </div>
-          <div class="carousel-item portrait- active" style="background-image: url('Images/Front - 2.jpeg'); "></div>
-          <div class="carousel-item" style="background-image: url('Images/Image 1.jpg'); "></div>
-          <div class="carousel-item" style="background-image: url('Images/Image 2.jpg'); "></div>
-          <div class="carousel-item portrait-" style="background-image: url('Images/Front - 4.jpeg'); "></div>
-          <div class="carousel-item" style="background-image: url('Images/Image 3.jpg'); "></div>
-      </div> 
-      <a class="carousel-control-prev" href="#indicators" role="button" data-slide="prev"> 
-          <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>  -->
-          <span class="ind left">&#10229;</span>            
-          <span class="sr-only">Previous</span> 
-      </a> 
-
-      <a class="carousel-control-next" href="#indicators" role="button" data-slide="next"> 
-          <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>  -->
-          <span class="ind right">&#10230;</span>
-          <span class="sr-only">Next</span> 
-      </a>
-  </div>
-</header>
       `;
     }
   }
-  
   customElements.define('header-component', Header); // when i put header-element tag in html it will act as the Header 
