@@ -8,6 +8,11 @@ html {
   height: 100%;
   scroll-behavior: smooth;
   overflow-x: hidden;
+
+}
+
+::selection{
+    background-color: #b72113;
 }
 
 * {
@@ -359,9 +364,10 @@ li {
   border: solid 1.5px #1b3680;
   color: #fdfdfd !important;
   font-family: "montserrat", serif;
+  font-weight: 500;
   text-transform: capitalize;
   letter-spacing: 2px;
-  font-size: 1em;
+  font-size: 0.8em;
   padding: 15px 25px;
   border-radius: 5px;
   text-decoration-line: none;
@@ -370,7 +376,7 @@ li {
 
 .button-container a:hover {
   background-color: transparent !important;
-  color: #0030b3 !important;
+  color: #1b3680 !important;
 }
 
 /* Explore Section */
@@ -763,7 +769,7 @@ footer hr {
   }
   
   .d-text-container {
-    background-color: #1b3680;
+    background-color: #b72113;
     max-width: 50vw;
     min-height: 800px;
     position: relative;
