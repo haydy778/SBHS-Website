@@ -691,7 +691,7 @@ footer hr {
   .m-text-container {
     background-color: #1b3680;
     max-width: 50vw;
-    min-height: 800px;
+    max-height: 800px;
     position: relative;
     padding: 50px;
     padding-bottom: 30px;
