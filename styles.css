@@ -95,6 +95,7 @@ body {
   color: #fdfdfd;
   opacity: 1;
   margin-bottom: 50px !important;
+  z-index: 100;
 }
 
 .carousel-control-next-icon:hover {
@@ -114,7 +115,7 @@ body {
 
 .sbhs-logo {
   position: relative;
-  z-index: 100;
+  z-index: 1;
   margin-left: 0px;
   width: 400px;
   height: auto;
@@ -904,4 +905,71 @@ footer hr {
 
 .chess-image-container- img{
   width: 80vw;
+}
+
+.chess-whole-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 100px;
+}
+
+.chess-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  padding: 50px;
+  border: 0.5px solid black;
+}
+
+.chess-image-container i{
+  font-size: 5em;
+  background: -webkit-linear-gradient(#1b3680, #b72113);
+  -webkit-background-clip: text;
+  background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.chess-text-container{
+  max-width: 250px;
+  text-align: center;
+}
+
+.chess-text-container h1{
+  font-family: 'Cinzel', serif;
+  font-size: 2em;
+  background: -webkit-linear-gradient(#b72113, #1b3680);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.chess-text-container p{
+  font-family: 'montserrat';
+  font-size: 0.9em;
+}
+
+.chess-text{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.chess-text h1{
+  color: #b72113;
+  font-family: 'Cinzel', serif;
+  width: 80%;
+}
+
+.chess-text p{
+  color: #000000;
+  font-family: 'montserrat';
+  width: 80%;
 }
