@@ -20,7 +20,13 @@ class Header extends HTMLElement { // Have my header html in one place so if i n
                   <a class="navbar-a-item" href="index.html">Home</a>
               </li>
               <li class="navbar-item">
+              <a class="navbar-a-item" href="rugby.html">Rugby</a>
+              </li>
+              <li class="navbar-item">
                   <a class="navbar-a-item" href="debating.html">Debating</a>
+              </li>
+              <li class="navbar-item">
+                  <a class="navbar-a-item" href="hockey.html">Hockey</a>
               </li>
               <li class="navbar-item dropdown-menu-name ">
                   <a class="navbar-a-item dropdown-menu-name-a" href="choir.html">
@@ -51,13 +57,6 @@ class Header extends HTMLElement { // Have my header html in one place so if i n
               <a class="navbar-a-item" href="chess.html">Chess</a>
               </li>
 
-              <li class="navbar-item">
-              <a class="navbar-a-item" href="#">Unfinished</a>
-              </li>
-
-              <li class="navbar-item">
-                  <a class="navbar-a-item" href="#">Unfinished</a>
-              </li>
               <li class="navbar-item">
                   <a class="navbar-a-item" onclick="bottom()" href="#">Contact</a>
               </li>
