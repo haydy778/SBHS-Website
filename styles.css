@@ -895,3 +895,13 @@ footer hr {
 .momentum-choir{
   background-color: #1b3680;
 }
+
+/* Chess page */
+.chess-image-container-{
+  display: flex;
+  justify-content: center;
+}
+
+.chess-image-container- img{
+  width: 80vw;
+}
