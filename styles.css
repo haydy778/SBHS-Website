@@ -28,7 +28,7 @@ body {
 
 .carousel-item {
   margin-top: 60px;
-  height: 92vh;
+  height: 93vh;
   min-height: 350px;
   background: no-repeat center scroll;
   -webkit-background-size: cover;
@@ -96,6 +96,7 @@ body {
   opacity: 1;
   margin-bottom: 50px !important;
   z-index: 100;
+  user-select: none;
 }
 
 .carousel-control-next-icon:hover {
