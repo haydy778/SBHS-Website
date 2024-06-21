@@ -1,1 +1,3 @@
 # SBHS-Website
+
+This project was originally going to be a complete remake of the Southland Boys' High School website with all the pages having been created. That project was massive and was going to be very time consuming. My teacher mentioned that I should focus on certain aspects of the school instead of doing the whole website. So I decided to just make the home page and a chess, debating, choir, hockey and rugby pages. This was much more achievable target. My footer however used similar menus to the current website so that is inactive at this time and those pages would be active if the whole project was completed and is a current space filler for now. 
