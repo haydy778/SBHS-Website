@@ -58,7 +58,7 @@ class Header extends HTMLElement { // Have my header html in one place so if i n
               </li>
 
               <li class="navbar-item">
-                  <a class="navbar-a-item" onclick="bottom()" href="#">Contact</a>
+                  <a class="navbar-a-item" onclick="bottom()">Contact</a>
               </li>
           </ul>
       </div>
@@ -123,3 +123,7 @@ class Header extends HTMLElement { // Have my header html in one place so if i n
     }
   }
   customElements.define('header-component', Header); // when i put header-element tag in html it will act as the Header 
+
+  function bottom() {
+    window.scrollTo(0, document.body.scrollHeight);
+  }

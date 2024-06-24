@@ -11,7 +11,7 @@ html {
 }
 
 ::selection {
-  background-color: #b72113;
+  background-color: #b721139c;
 }
 
 * {
@@ -163,10 +163,6 @@ ul {
   z-index: 100;
 }
 
-.navbar-a-item:hover {
-  text-decoration: none;
-  color: #0061bb;
-}
 
 .navbar-container-sub a:hover {
   color: #000000;
@@ -182,7 +178,15 @@ ul {
   transition: color 0.1s ease-in-out;
   white-space: nowrap;
   font-weight: 500;
+  cursor: pointer;
+  user-select: none;
 }
+
+.navbar-a-item:hover {
+  text-decoration: none;
+  color: #0061bb !important;
+}
+
 
 .carousel-caption {
   bottom: 30%;
@@ -509,6 +513,9 @@ li {
   background-color: #1b3680;
   color: #fdfdfd;
   font-family: "Cinzel";
+  font-size: 1.4em;
+  line-height: 25px;
+  transition: all 0.2s;
   display: flex;
   align-items: center;
   justify-content: center;
