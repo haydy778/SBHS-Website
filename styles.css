@@ -11,7 +11,7 @@ html {
 }
 
 ::selection {
-  background-color: #b72113;
+  background-color: #b721139c;
 }
 
 * {
@@ -75,20 +75,6 @@ body {
   text-shadow: 0 1px 3px rgb(0 0 0 / 20%);
 }
 
-@media (min-width: 0px) and (max-width: 600px) {
-  .display-4 {
-    font-size: 45px !important;
-  }
-
-  .lead {
-    font-size: 25px !important;
-  }
-
-  .text {
-    font-size: 45px;
-  }
-}
-
 .carousel-control-next,
 .carousel-control-prev {
   font-size: 50px !important;
@@ -146,26 +132,10 @@ ul {
   background-color: #fff;
 }
 
-.navbar.three {
-  min-height: 70px;
-  padding: 0px;
-  margin-bottom: 0px;
-  margin-right: 20px;
-}
-
-#menu-bar#two li a {
-  color: #000000;
-}
-
 .navbar-item {
   padding: 1em;
   list-style-type: none;
   z-index: 100;
-}
-
-.navbar-a-item:hover {
-  text-decoration: none;
-  color: #0061bb;
 }
 
 .navbar-container-sub a:hover {
@@ -182,6 +152,13 @@ ul {
   transition: color 0.1s ease-in-out;
   white-space: nowrap;
   font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+}
+
+.navbar-a-item:hover {
+  text-decoration: none;
+  color: #0061bb !important;
 }
 
 .carousel-caption {
@@ -239,22 +216,44 @@ li {
   list-style-type: none;
 }
 
-.header-2 {
-  display: none;
-}
-
-.navbar-small-container {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-}
-
 @keyframes text {
   100% {
     transform: translate(-100%, 0);
   }
+}
+
+/* Collapsed Header */
+#collapsedHeader {
+  position: absolute;
+  right: 0;
+  width: 150px;
+  height: 200px;
+  margin-top: 50px;
+  background-color: #fff;
+  z-index: 99;
+  transform: translateX(200%);
+  transition: all 0.5s;
+}
+
+.navbar.two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 2em;
+}
+
+.navbar.two li {
+  padding: 0.5em 0em;
+}
+
+.navbar.two a {
+  font-size: 0.7em;
+}
+
+.menu{
+  display: none;
 }
 
 /* Rolling Track CSS */
@@ -391,7 +390,7 @@ li {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-evenly;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   padding: 50px;
 }
 
@@ -509,6 +508,9 @@ li {
   background-color: #1b3680;
   color: #fdfdfd;
   font-family: "Cinzel";
+  font-size: 1.4em;
+  line-height: 25px;
+  transition: all 0.2s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -831,39 +833,39 @@ footer hr {
 
 /* Debating page */
 
-.debating-container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 75px;
+.debating-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 75px;
 }
 
-.section-title.debating{
+.section-title.debating {
   padding-top: 55px;
 }
 
-.debating-text-container{
+.debating-text-container {
   width: 60%;
   background-color: #1b3680;
   padding: 50px;
 }
 
-.debating-text-container h1{
-  font-family: 'Cinzel', serif;
+.debating-text-container h1 {
+  font-family: "Cinzel", serif;
   font-size: 2.5em;
   color: #fff;
 }
 
-.debating-text-container p{
-  font-family: 'montserrat', sans-serif;
+.debating-text-container p {
+  font-family: "montserrat", sans-serif;
   font-size: 1em;
   letter-spacing: 0.5px;
   color: #fff;
 }
 
-.debating-gallery-container{
+.debating-gallery-container {
   display: flex;
 }
 
@@ -886,7 +888,7 @@ footer hr {
   width: 100%;
 }
 
-.choir-video{
+.choir-video {
   display: flex;
   justify-content: center;
   width: 100vw;
@@ -894,21 +896,21 @@ footer hr {
   padding: 50px;
 }
 
-.momentum-choir{
+.momentum-choir {
   background-color: #1b3680;
 }
 
 /* Chess page */
-.chess-image-container-{
+.chess-image-container- {
   display: flex;
   justify-content: center;
 }
 
-.chess-image-container- img{
+.chess-image-container- img {
   width: 80vw;
 }
 
-.chess-whole-container{
+.chess-whole-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -916,7 +918,7 @@ footer hr {
   margin-top: 100px;
 }
 
-.chess-container{
+.chess-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -926,22 +928,22 @@ footer hr {
   border: 0.5px solid black;
 }
 
-.chess-image-container i{
+.chess-image-container i {
   font-size: 5em;
   background: -webkit-linear-gradient(#1b3680, #b72113);
   -webkit-background-clip: text;
-  background-clip: text; 
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
 }
 
-.chess-text-container{
+.chess-text-container {
   max-width: 250px;
   text-align: center;
 }
 
-.chess-text-container h1{
-  font-family: 'Cinzel', serif;
+.chess-text-container h1 {
+  font-family: "Cinzel", serif;
   font-size: 2em;
   background: -webkit-linear-gradient(#b72113, #1b3680);
   -webkit-background-clip: text;
@@ -949,12 +951,12 @@ footer hr {
   -webkit-text-fill-color: transparent;
 }
 
-.chess-text-container p{
-  font-family: 'montserrat';
+.chess-text-container p {
+  font-family: "montserrat";
   font-size: 0.9em;
 }
 
-.chess-text{
+.chess-text {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -963,14 +965,63 @@ footer hr {
   margin-top: 100px;
 }
 
-.chess-text h1{
+.chess-text h1 {
   color: #b72113;
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   width: 80%;
 }
 
-.chess-text p{
+.chess-text p {
   color: #000000;
-  font-family: 'montserrat';
+  font-family: "montserrat";
   width: 80%;
+}
+
+/* Responsivity */
+
+@media (min-width: 0px) and (max-width: 900px) {
+  .navbar.one {
+    padding-bottom: 25px;
+  }
+  .header1{
+    display: none;
+  }
+  .menu{
+    display: block !important;
+  }
+}
+
+@media (min-width: 900px){
+  #collapsedHeader{
+    display: none;
+  }
+}
+
+@media (max-width: 1000px){
+  .rector-container {
+    flex-direction: column;
+  }
+   
+  .rector-text-container {
+    margin-top: -100px;
+    margin-left: 0px;
+    max-width: 80vw;
+  }
+}
+
+@media (max-width: 1100px){
+  .whatson-news-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .whatson-section{
+    border: none;
+    width: 80vw;
+  }
+
+  .news-section{
+    border: none;
+    width: 80vw;
+  }
 }
