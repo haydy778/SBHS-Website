@@ -138,6 +138,11 @@ ul {
   z-index: 100;
 }
 
+.navbar-a-item:hover {
+  text-decoration: none;
+  color: #0061bb;
+}
+
 .navbar-container-sub a:hover {
   color: #000000;
 }
@@ -152,13 +157,6 @@ ul {
   transition: color 0.1s ease-in-out;
   white-space: nowrap;
   font-weight: 500;
-  cursor: pointer;
-  user-select: none;
-}
-
-.navbar-a-item:hover {
-  text-decoration: none;
-  color: #0061bb !important;
 }
 
 .carousel-caption {
