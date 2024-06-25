@@ -140,7 +140,7 @@ ul {
 
 .navbar-a-item:hover {
   text-decoration: none;
-  color: #0061bb;
+  color: #0061bb !important;
 }
 
 .navbar-container-sub a:hover {
@@ -157,6 +157,7 @@ ul {
   transition: color 0.1s ease-in-out;
   white-space: nowrap;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .carousel-caption {
@@ -987,6 +988,10 @@ footer hr {
   .menu{
     display: block !important;
   }
+  .footer-container{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 }
 
 @media (min-width: 900px){
@@ -1004,6 +1009,9 @@ footer hr {
     margin-top: -100px;
     margin-left: 0px;
     max-width: 80vw;
+  }
+  .column-2{
+    margin-right: 0px !important;
   }
 }
 
