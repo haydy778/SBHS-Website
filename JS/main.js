@@ -97,19 +97,19 @@ class Header extends HTMLElement { // Have my header html in one place so if i n
 customElements.define('header-component', Header); // when i put header-element tag in html it will act as the Header 
 
 function bottom() {
-    window.scrollTo(0, document.body.scrollHeight);
+    window.scrollTo(0, document.body.scrollHeight); // scroll to bottom onclick
 }
 
 function openNav(){
-    let collapsedHeader = document.getElementById("collapsedHeader");
-    let navbarContainer = document.getElementById("navbarContainer");
+    let collapsedHeader = document.getElementById("collapsedHeader"); // set my header to collapsedHeader variable
+    let navbarContainer = document.getElementById("navbarContainer"); // set my header to navbarContainer variable
 
 
     if(collapsedHeader.style.transform == 'translateX(0%)'){ // allow animation my using translateX function
         collapsedHeader.style.transform = 'translateX(200%)' // slide in menu
-        navbarContainer.style.boxShadow = '0px 0px 10px 0px rgba(0, 0, 0, 0.5)'
+        navbarContainer.style.boxShadow = '0px 0px 10px 0px rgba(0, 0, 0, 0.5)' // add shadow
       }else{
         collapsedHeader.style.transform = 'translateX(0%)' // slide out menu
-        navbarContainer.style.boxShadow = 'none'
+        navbarContainer.style.boxShadow = 'none' // remove shadow
       }
 }

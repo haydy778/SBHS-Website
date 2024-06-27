@@ -3,6 +3,7 @@
 
 /* Default Styles */
 
+/* Set background color, height, scroll behavior, and hide horizontal overflow */
 html {
   background-color: #fdfdfd;
   height: 100%;
@@ -10,22 +11,26 @@ html {
   overflow-x: hidden;
 }
 
+/* Set selection background color */
 ::selection {
   background-color: #b721139c;
 }
 
+/* Reset margin and padding for all elements, and set border-box for box-sizing */
 * {
   margin: 0px;
   padding: 0px 0px;
   box-sizing: border-box;
 }
 
+/* Set background color for body */
 body {
   background-color: #fdfdfd;
 }
 
 /* Header Slideshow */
 
+/* Set height, background position, and background size for carousel items */
 .carousel-item {
   margin-top: 60px;
   height: 93vh;
@@ -39,10 +44,12 @@ body {
   background-color: white !important;
 }
 
+/* Position carousel caption at the bottom */
 .carousel-caption {
   bottom: 5% !important;
 }
 
+/* Style for the caption text container */
 .d-none {
   left: -50px;
   background-color: #000b2988;
@@ -55,6 +62,7 @@ body {
   scale: 0.75;
 }
 
+/* Style for the caption heading */
 .display-4 {
   color: #fdfdfd;
   font-size: 20px;
@@ -64,6 +72,7 @@ body {
   letter-spacing: 3px;
 }
 
+/* Style for the caption lead text */
 .lead {
   font-family: "Cinzel", serif;
   text-transform: uppercase;
@@ -75,6 +84,7 @@ body {
   text-shadow: 0 1px 3px rgb(0 0 0 / 20%);
 }
 
+/* Style for carousel control icons */
 .carousel-control-next,
 .carousel-control-prev {
   font-size: 50px !important;
@@ -84,21 +94,25 @@ body {
   user-select: none;
 }
 
+/* Remove background color on hover for next control icon */
 .carousel-control-next-icon:hover {
   background-color: transparent;
 }
 
+/* Remove background color on hover for previous control icon */
 .carousel-control-prev-icon:hover {
   background-color: transparent;
 }
 
 /* Navbar */
 
+/* Container for the logo */
 .sbhs-logo-container {
   position: relative;
   height: 0px;
 }
 
+/* Style for the logo image */
 .sbhs-logo {
   position: relative;
   margin-left: 0px;
@@ -108,6 +122,7 @@ body {
   z-index: 100;
 }
 
+/* Container for the navbar */
 .navbar-container {
   position: fixed;
   top: 0;
@@ -117,10 +132,12 @@ body {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
+/* Reset margin for unordered lists */
 ul {
   margin-bottom: 0px;
 }
 
+/* Style for the navbar */
 .navbar {
   position: relative;
   display: flex;
@@ -132,21 +149,25 @@ ul {
   background-color: #fff;
 }
 
+/* Style for navbar items */
 .navbar-item {
   padding: 1em;
   list-style-type: none;
   z-index: 100;
 }
 
+/* Style for navbar links on hover */
 .navbar-a-item:hover {
   text-decoration: none;
   color: #0061bb !important;
 }
 
+/* Style for sub-navbar links on hover */
 .navbar-container-sub a:hover {
   color: #000000;
 }
 
+/* Style for navbar links */
 .navbar-a-item {
   color: black;
   text-transform: uppercase;
@@ -160,16 +181,19 @@ ul {
   cursor: pointer;
 }
 
+/* Position the carousel caption */
 .carousel-caption {
   bottom: 30%;
 }
 
+/* Style for dropdown menu on hover */
 .dropdown-menu-name:hover .dropdown-menu-header {
   visibility: visible;
   opacity: 1;
   transition: all 0.3s;
 }
 
+/* Style for dropdown menu header */
 .dropdown-menu-header {
   padding-top: 0px;
   position: absolute;
@@ -180,10 +204,12 @@ ul {
   opacity: 0;
 }
 
+/* Style for dropdown menu nav */
 .header-menu__dropdown-nav {
   background-color: #fff;
 }
 
+/* Style for dropdown menu items */
 .dropdown-item {
   list-style-type: none;
   background-color: transparent !important;
@@ -195,19 +221,23 @@ ul {
   padding: 10px 0px;
 }
 
+/* Style for dropdown menu items on hover */
 .dropdown-item:hover {
   background-color: transparent;
   color: #0061bb;
 }
 
+/* Style for dropdown menu name on hover */
 .dropdown-menu-header:hover .dropdown-menu-name a {
   color: #0061bb;
 }
 
+/* Reset list style for list items */
 li {
   list-style-type: none;
 }
 
+/* Style for dropdown menu nav */
 .header-menu__dropdown-nav {
   text-align: center;
   width: 200px;
@@ -215,6 +245,7 @@ li {
   list-style-type: none;
 }
 
+/* Animation for text */
 @keyframes text {
   100% {
     transform: translate(-100%, 0);
@@ -222,8 +253,9 @@ li {
 }
 
 /* Collapsed Header */
+/* Style for collapsed header */
 #collapsedHeader {
-  position: absolute;
+  position: fixed;
   right: 0;
   width: 150px;
   height: 200px;
@@ -234,6 +266,7 @@ li {
   transition: all 0.5s;
 }
 
+/* Style for navbar in collapsed header */
 .navbar.two {
   display: flex;
   flex-direction: column;
@@ -243,20 +276,24 @@ li {
   padding-left: 2em;
 }
 
+/* Style for list items in collapsed header navbar */
 .navbar.two li {
   padding: 0.5em 0em;
 }
 
+/* Style for links in collapsed header navbar */
 .navbar.two a {
   font-size: 0.7em;
 }
 
+/* Hide menu initially */
 .menu{
   display: none;
 }
 
 /* Rolling Track CSS */
 
+/* Style for track container */
 .track-container {
   padding: 1em;
   background-color: #002446;
@@ -269,6 +306,7 @@ li {
   overflow: hidden;
 }
 
+/* Style for track text */
 .track {
   position: relative;
   display: flex;
@@ -286,12 +324,14 @@ li {
 
 /* Section Title */
 
+/* Style for section title container */
 .section-title {
   padding: 50px;
   padding-bottom: 10px;
   text-align: center;
 }
 
+/* Style for section title heading */
 .section-title h1 {
   color: #024b8f;
   font-family: "Cinzel", serif;
@@ -302,6 +342,7 @@ li {
   user-select: none;
 }
 
+/* Style for section title paragraph */
 .section-title p {
   margin-bottom: 0px;
   color: black;
@@ -315,17 +356,21 @@ li {
 
 /* Rector address */
 
+/* Style for rector container */
 .rector-container {
   padding: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
+/* Style for rector image */
 .rector-container img {
-  height: 60vw;
+  height: 50vw;
 }
 
+/* Style for rector text container */
 .rector-text-container {
   background-color: #b72113;
   max-width: 50vw;
@@ -336,6 +381,7 @@ li {
   padding-bottom: 30px;
 }
 
+/* Style for rector text heading */
 .rector-text-container h1 {
   color: #fdfdfd;
   font-family: "Cinzel", serif;
@@ -346,6 +392,7 @@ li {
   user-select: none;
 }
 
+/* Style for rector text paragraph */
 .rector-text-container p {
   color: #fdfdfd;
   font-family: "montserrat", serif;
@@ -353,11 +400,13 @@ li {
   user-select: none;
 }
 
+/* Style for button container */
 .button-container {
   display: block;
   margin-top: 30px;
 }
 
+/* Style for button link */
 .button-container a {
   background-color: #1b3680;
   border: solid 1.5px #1b3680;
@@ -373,6 +422,7 @@ li {
   transition: all 0.5s;
 }
 
+/* Style for button link on hover */
 .button-container a:hover {
   background-color: transparent !important;
   color: #1b3680 !important;
@@ -380,10 +430,12 @@ li {
 
 /* Explore Section */
 
+/* Style for explore section */
 .explore-section {
   background-color: rgba(128, 128, 128, 0.107);
 }
 
+/* Style for explore whole container */
 .explore-whole-container {
   display: flex;
   flex-direction: row;
@@ -393,12 +445,14 @@ li {
   padding: 50px;
 }
 
+/* Style for explore container */
 .explore-container {
   width: 375px;
   margin: 20px;
   text-align: center;
 }
 
+/* Style for explore item */
 .explore {
   height: 325px;
   width: 375px;
@@ -417,32 +471,38 @@ li {
   transition: all 0.5s;
 }
 
+/* Style for explore item on hover */
 .explore:hover {
   transform: scale(1.05);
 }
 
+/* Style for explore image */
 .image img {
   height: auto;
   width: 375px;
 }
 
+/* Style for explore text heading */
 .explore-text-container h1 {
   font-family: "Cinzel", serif;
   font-size: 1.3em;
   text-transform: uppercase;
 }
 
+/* Style for explore text paragraph */
 .explore-text-container p {
   font-family: "montserrat";
   font-size: 0.8em;
   letter-spacing: 1px;
 }
 
+/* Style for button container two */
 .button-container-two {
   display: block;
   margin-top: 30px;
 }
 
+/* Style for button link two */
 .button-container-two a {
   background-color: none;
   border: solid 1.5px #1b3680;
@@ -458,6 +518,7 @@ li {
   font-weight: 600;
 }
 
+/* Style for button link two on hover */
 .button-container-two a:hover {
   background-color: #b72113 !important;
   border: solid 1.5px #b72113;
@@ -466,6 +527,7 @@ li {
 
 /* Whats on/News Section */
 
+/* Whatson News Section */
 .whatson-news-section {
   display: flex;
   flex-direction: row;
@@ -474,23 +536,27 @@ li {
   background-color: #fdfdfd;
 }
 
+/* Whatson Section */
 .whatson-section {
   width: 50vw;
   border-right: 0.1px solid black;
   justify-content: center;
 }
 
+/* News Section */
 .news-section {
   width: 50vw;
   border-left: 0.1px solid black;
 }
 
+/* Whatson Container */
 .whatson-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* Whatson Event */
 .whatson {
   display: flex;
   flex-direction: row;
@@ -499,6 +565,7 @@ li {
   cursor: pointer;
 }
 
+/* Date Box */
 .whatson .date-box {
   text-align: center;
   padding: 20px;
@@ -516,10 +583,12 @@ li {
   text-decoration: none;
 }
 
+/* Date Box Hover */
 .date-box:hover {
   background-color: #b72113;
 }
 
+/* Whatson Event Text */
 .whatson p {
   text-align: left;
   color: black;
@@ -530,12 +599,14 @@ li {
   max-width: 300px;
 }
 
+/* Horizontal Line */
 hr {
   width: 50px;
   margin-right: 50px;
   background-color: #000000;
 }
 
+/* News Section Container */
 .news-section {
   display: flex;
   flex-direction: column;
@@ -543,6 +614,7 @@ hr {
   justify-content: left;
 }
 
+/* News Whole Container */
 .news-whole-container {
   display: flex;
   flex-direction: row;
@@ -552,6 +624,7 @@ hr {
   margin-top: 30px;
 }
 
+/* News Container */
 .news-container {
   display: row;
   flex-direction: column;
@@ -561,6 +634,7 @@ hr {
   cursor: pointer;
 }
 
+/* News Image Container */
 .news-image-container {
   display: flex;
   flex-direction: column;
@@ -574,14 +648,17 @@ hr {
   transition: all 0.5s;
 }
 
+/* News Image */
 .news-image-container img {
   width: 200px;
 }
 
+/* News Image Hover */
 .news-image-container:hover {
   transform: scale(1.1);
 }
 
+/* News Text Container */
 .news-text-container h1 {
   text-align: left;
   font-family: "montserrat";
@@ -592,7 +669,6 @@ hr {
 }
 
 /* Footer */
-
 footer {
   width: 100vw;
   min-height: 550px;
@@ -600,6 +676,7 @@ footer {
   margin-top: 100px;
 }
 
+/* Footer Container */
 .footer-container {
   display: flex;
   flex-direction: row;
@@ -608,39 +685,46 @@ footer {
   padding-top: 20px;
 }
 
+/* Footer Column */
 .footer-column {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
+/* Column 1 */
 .column-1 {
   align-items: flex-start;
 }
 
+/* Footer Column Text */
 .footer-column {
   color: #ffffff;
   margin: 50px;
   margin-top: 0px;
 }
 
+/* Footer Column Heading */
 .footer-column h1 {
   margin-top: 10px;
   font-family: "Cinzel";
   font-size: 1.5em;
 }
 
+/* Column 1 Paragraph */
 .column-1 p {
   font-family: "montserrat";
   font-size: 14px;
   letter-spacing: 1px;
 }
 
+/* Footer Image */
 footer img {
   margin: 20px 50px 0px 50px;
   padding-top: 25px;
 }
 
+/* Footer Horizontal Line */
 footer hr {
   width: 100vw;
   background-color: #fff;
@@ -648,16 +732,19 @@ footer hr {
   margin: 20px 0px 0px 0px;
 }
 
+/* Socials */
 .socials {
   margin-bottom: 20px;
 }
 
+/* Social Icons */
 .socials i {
   margin-right: 5px;
   font-size: 20px;
   color: #fff;
 }
 
+/* Footer Links */
 .footer-column a {
   color: rgba(255, 255, 255, 0.71);
   text-decoration: none;
@@ -668,12 +755,14 @@ footer hr {
   text-align: center;
 }
 
+/* Footer Title */
 .footer-title {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
+/* Footer Title Heading */
 .footer-title h1 {
   padding-top: 25px;
   font-family: "Cinzel";
@@ -684,6 +773,7 @@ footer hr {
 }
 
 /* Choir Page CSS */
+/* Main Container */
 .m-container {
   padding: 50px;
   display: flex;
@@ -692,19 +782,22 @@ footer hr {
   justify-content: space-evenly;
 }
 
+/* Main Container Image */
 .m-container img {
   height: 40vw;
 }
 
+/* Main Text Container */
 .m-text-container {
   background-color: #1b3680;
   max-width: 50vw;
-  max-height: 800px;
+  min-height: 500px;
   position: relative;
   padding: 50px;
   padding-bottom: 30px;
 }
 
+/* Main Text Container Heading */
 .m-text-container h1 {
   color: #fdfdfd;
   font-family: "Cinzel", serif;
@@ -715,6 +808,7 @@ footer hr {
   user-select: none;
 }
 
+/* Main Text Container Paragraph */
 .m-text-container p {
   color: #fdfdfd;
   font-family: "montserrat", serif;
@@ -722,17 +816,20 @@ footer hr {
   user-select: none;
 }
 
+/* Main Left Section */
 .m-left {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
+/* Main Section Title */
 .m-section-title {
-  padding: 50px;
   padding-bottom: 10px;
   text-align: center;
 }
 
+/* Main Section Title Heading */
 .m-section-title h1 {
   color: #024b8f;
   font-family: "Cinzel", serif;
@@ -743,6 +840,7 @@ footer hr {
   user-select: none;
 }
 
+/* Main Section Title Paragraph */
 .m-section-title p {
   margin-bottom: 0px;
   color: black;
@@ -757,6 +855,7 @@ footer hr {
   margin-bottom: 0px;
 }
 
+/* Debating Container */
 .d-container {
   padding: 50px;
   display: flex;
@@ -765,19 +864,22 @@ footer hr {
   justify-content: space-evenly;
 }
 
+/* Debating Container Image */
 .d-container img {
   height: 40vw;
 }
 
+/* Debating Text Container */
 .d-text-container {
   background-color: #b72113;
   max-width: 50vw;
-  min-height: 800px;
+  min-height: 500px;
   position: relative;
   padding: 50px;
   padding-bottom: 30px;
 }
 
+/* Debating Text Container Heading */
 .d-text-container h1 {
   color: #fdfdfd;
   font-family: "Cinzel", serif;
@@ -788,6 +890,7 @@ footer hr {
   user-select: none;
 }
 
+/* Debating Text Container Paragraph */
 .d-text-container p {
   color: #fdfdfd;
   font-family: "montserrat", serif;
@@ -795,17 +898,19 @@ footer hr {
   user-select: none;
 }
 
+/* Debating Left Section */
 .d-left {
   display: flex;
   flex-direction: column;
 }
 
+/* Debating Section Title */
 .d-section-title {
-  padding: 50px;
   padding-bottom: 10px;
   text-align: center;
 }
 
+/* Debating Section Title Heading */
 .d-section-title h1 {
   color: #024b8f;
   font-family: "Cinzel", serif;
@@ -816,6 +921,7 @@ footer hr {
   user-select: none;
 }
 
+/* Debating Section Title Paragraph */
 .d-section-title p {
   margin-bottom: 0px;
   color: black;
@@ -832,6 +938,7 @@ footer hr {
 
 /* Debating page */
 
+/* Debating container styles */
 .debating-container {
   display: flex;
   justify-content: space-evenly;
@@ -841,22 +948,26 @@ footer hr {
   margin-top: 75px;
 }
 
+/* Section title styles for debating page */
 .section-title.debating {
   padding-top: 55px;
 }
 
+/* Debating text container styles */
 .debating-text-container {
   width: 60%;
   background-color: #1b3680;
   padding: 50px;
 }
 
+/* Heading styles for debating text container */
 .debating-text-container h1 {
   font-family: "Cinzel", serif;
   font-size: 2.5em;
   color: #fff;
 }
 
+/* Paragraph styles for debating text container */
 .debating-text-container p {
   font-family: "montserrat", sans-serif;
   font-size: 1em;
@@ -864,10 +975,12 @@ footer hr {
   color: #fff;
 }
 
+/* Debating gallery container styles */
 .debating-gallery-container {
   display: flex;
 }
 
+/* Row styles for debating gallery */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -875,18 +988,21 @@ footer hr {
   justify-content: center;
 }
 
+/* Column styles for debating gallery */
 .column {
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
 }
 
+/* Image styles for debating gallery */
 .column img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
 }
 
+/* Choir video container styles */
 .choir-video {
   display: flex;
   justify-content: center;
@@ -895,28 +1011,35 @@ footer hr {
   padding: 50px;
 }
 
+/* Momentum choir container styles */
 .momentum-choir {
   background-color: #1b3680;
 }
 
 /* Chess page */
+
+/* Chess image container styles */
 .chess-image-container- {
   display: flex;
   justify-content: center;
 }
 
+/* Chess image styles */
 .chess-image-container- img {
   width: 80vw;
 }
 
+/* Chess whole container styles */
 .chess-whole-container {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
   margin-top: 100px;
 }
 
+/* Chess container styles */
 .chess-container {
   display: flex;
   flex-direction: column;
@@ -925,8 +1048,10 @@ footer hr {
   width: 350px;
   padding: 50px;
   border: 0.5px solid black;
+  margin: 25px;
 }
 
+/* Chess icon styles */
 .chess-image-container i {
   font-size: 5em;
   background: -webkit-linear-gradient(#1b3680, #b72113);
@@ -936,11 +1061,13 @@ footer hr {
   margin-bottom: 10px;
 }
 
+/* Chess text container styles */
 .chess-text-container {
   max-width: 250px;
   text-align: center;
 }
 
+/* Chess heading styles */
 .chess-text-container h1 {
   font-family: "Cinzel", serif;
   font-size: 2em;
@@ -950,11 +1077,13 @@ footer hr {
   -webkit-text-fill-color: transparent;
 }
 
+/* Chess paragraph styles */
 .chess-text-container p {
   font-family: "montserrat";
   font-size: 0.9em;
 }
 
+/* Chess text container styles */
 .chess-text {
   display: flex;
   flex-direction: column;
@@ -964,12 +1093,14 @@ footer hr {
   margin-top: 100px;
 }
 
+/* Chess heading styles */
 .chess-text h1 {
   color: #b72113;
   font-family: "Cinzel", serif;
   width: 80%;
 }
 
+/* Chess paragraph styles */
 .chess-text p {
   color: #000000;
   font-family: "montserrat";
@@ -978,6 +1109,7 @@ footer hr {
 
 /* Responsivity */
 
+/* Media query for screens between 0px and 900px */
 @media (min-width: 0px) and (max-width: 900px) {
   .navbar.one {
     padding-bottom: 25px;
@@ -994,27 +1126,42 @@ footer hr {
   }
 }
 
+/* Media query for screens up to 600px */
+@media (max-width: 600px){
+  p{
+    font-size: 0.7em !important;
+  }
+  .section-title h1{
+    font-size: 2em;
+  }
+}
+
+/* Media query for screens wider than 900px */
 @media (min-width: 900px){
   #collapsedHeader{
     display: none;
   }
 }
 
+/* Media query for screens up to 1000px */
 @media (max-width: 1000px){
   .rector-container {
     flex-direction: column;
   }
    
   .rector-text-container {
-    margin-top: -100px;
+    margin-top: 30px;
     margin-left: 0px;
     max-width: 80vw;
+    padding: 30px;
   }
+
   .column-2{
     margin-right: 0px !important;
   }
 }
 
+/* Media query for screens up to 1100px */
 @media (max-width: 1100px){
   .whatson-news-section {
     flex-direction: column;
@@ -1029,5 +1176,30 @@ footer hr {
   .news-section{
     border: none;
     width: 80vw;
+  }
+
+  .m-container{
+    flex-direction: column;
+  }
+
+  .m-text-container{
+    max-width: 80vw;
+    margin-top: 2em;
+  }
+
+  .m-image-container img{
+    height: 500px;
+  }
+  .d-container{
+    flex-direction: column;
+  }
+
+  .d-text-container{
+    max-width: 80vw;
+    margin-top: 2em;
+  }
+
+  .d-image-container img{
+    height: 600px !important;
   }
 }
